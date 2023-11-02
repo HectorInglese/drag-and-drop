@@ -2,10 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-#section-one {
-  @apply bg-slate-300;
-};
+.cont{
+  @apply w-1/2;
+  @apply h-screen;
+  @apply flex;
+  @apply flex-col;
+  @apply justify-center;
+  @apply gap-5;
+  @apply bg-slate-600;
+  @apply px-10
+}
 
-#section-two{
-  @apply bg-gray-500;
-};
+.draggable {
+  @apply w-full; 
+  @apply bg-white;
+  @apply text-black; 
+  @apply text-center; 
+  @apply font-bold ;
+  @apply text-lg;
+  @apply cursor-grab;
+  @apply active:cursor-grabbing;
+}
