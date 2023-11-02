@@ -2,7 +2,7 @@
 
 const hangleDragOver = (e: React.DragEvent) => {
   e.preventDefault();
-  const afterElement = getDragAfterElement(e.currentTarget as HTMLElement, e.clientY)
+  const afterElement = getDragAfterElement(e.target as HTMLElement, e.clientY)
   const draggable = document.querySelector('.dragging')!
   if (afterElement == null) {
     e.currentTarget.appendChild(draggable)
